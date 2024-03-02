@@ -1,0 +1,24 @@
+.contact-info-container1 {
+    flex: 0 0 auto;
+    padding-right: 14px;
+    margin-top: -2px;
+  }
+  .contact-info-container {
+    background: url("/assets/div_34_230_34_229_1d107c.svg")
+      no-repeat 50% / cover;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: 77px;
+    padding-right: 26px;
+    padding-left: 26px;
+  }
+  .contact-info {
+    flex: 0 0 auto;
+    font: var(--font-weight-600) var(--font-size-18) "Poppins";
+    color: var(--color-grey-85d897f1);
+    white-space: pre-wrap;
+  }
+  

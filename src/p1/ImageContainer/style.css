@@ -1,0 +1,15 @@
+.vertical-align-image-container {
+    flex: 0 0 auto;
+    align-self: stretch;
+    margin-top: 65px;
+  }
+  .image-container {
+    border: none;
+    box-sizing: border-box;
+    display: block;
+    width: 430px;
+    max-width: initial;
+    height: 354px;
+    object-fit: contain;
+  }
+  

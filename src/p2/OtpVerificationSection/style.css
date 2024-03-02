@@ -1,0 +1,18 @@
+.verification-message {
+    flex: 0 0 auto;
+  }
+  .title-text-bold {
+    font: var(--font-weight-700) var(--font-size-18) "Inter";
+    color: var(--color-white);
+    white-space: pre-wrap;
+  }
+  .otp-verification-message {
+    font: var(--font-weight-500) var(--font-size-18) "Poppins";
+    box-sizing: border-box;
+    max-width: 375px;
+    margin-top: 19px;
+    color: var(--color-silver-9d27f479);
+    text-align: left;
+    white-space: pre-wrap;
+  }
+  

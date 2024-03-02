@@ -1,0 +1,102 @@
+/*.otp-verification-form {
+    padding: 305px 17px 204px 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    align-items: stretch;
+    justify-content: flex-start;
+    min-width: 430px;
+  }
+  .email-section-container {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .email-section {
+    flex: 0 0 auto;
+    padding-top: 11px;
+  }
+  .image-container {
+    box-sizing: border-box;
+    display: block;
+    width: 376px;
+    max-width: initial;
+    height: 66px;
+  }
+  .email-label-style {
+    flex: 0 0 auto;
+    font: var(--font-weight-500) var(--font-size-14) "Poppins";
+    margin-left: -350px;
+    color: var(--color-lightgrey-b0a2eed7);
+    white-space: pre-wrap;
+  }
+  */
+  #root{
+    display: flex; /* Makes the container a flexbox container */
+  justify-content: center; /* Horizontally centers child elements */
+  align-items: center; /* Vertically centers child elements */
+  min-height: 100vh;
+  }
+  body{
+    background-color: #032953;
+  }
+  .user-interaction-layout {
+    background-image: url('./assets/p2_img/forensic_bg2.jpeg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 640px; /* iPhone 14 & 15 Pro Max screen height */
+    width: 450px; /* iPhone 14 & 15 Pro Max screen width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding : 20px;
+    
+  }
+  
+  .heading {
+    font-size: 75px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffe100;
+  }
+  
+  .instruction {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    color-scheme: #00ff73;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  
