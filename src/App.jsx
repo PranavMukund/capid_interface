@@ -8,6 +8,7 @@ import StartButtonParagraph from './p1/StartButtonParagraph';
 import UserInteractionLayout from './p2/UserInteractionLayout';
 import P3 from "./P3";
 import UploadImage from "./p4";
+import P5_GenerateImage from "./P5_GenerateImage";
 
 function App() {
   
@@ -28,6 +29,9 @@ function App() {
 
             <Route path="/UploadImage"
                element={<UploadImage/>}/>
+
+            <Route path="/P5_GenerateImage"
+                  element={<P5_GenerateImage/>} />
             
           
         </Routes>
