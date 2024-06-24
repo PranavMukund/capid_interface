@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './style.css';
-import {  Navigate, useNavigate} from 'react-router-dom';
-
+import { Navigate, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const UploadImage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [showWarning, setShowWarning] = useState(false);
 
-  const Navigate=useNavigate();
+  const Navigate = useNavigate();
 
   const handleImageChange = (event) => {
     const newImage = event.target.files[0];
@@ -20,7 +20,7 @@ const UploadImage = () => {
       return;
     }
     // Implement your logic for generating content based on the uploaded image
-   console.log('Generating content...');
+    console.log('Generating content...');
     Navigate('/P5_GenerateImage');
   };
 
@@ -30,19 +30,19 @@ const UploadImage = () => {
         {selectedImage && (
           <img src={URL.createObjectURL(selectedImage)} alt="Selected Image" className="center-image" />
         )}
-        {!selectedImage && <p>No image selected</p>}
+        {!selectedImage && <p>No image selected, please select a human face image</p>}
         <input type="file" accept="image/*" onChange={handleImageChange} required />
-        <button className="upload-button">Upload</button>
+
       </div>
-      {showWarning && <p className="warning">Please select an image before generating.</p>}
+      {showWarning && <p className="warning" style={{ background: "red" }}>Please select an image before generating.</p>}
       <button className="generate-button" onClick={handleGenerate}>
         Generate
       </button>
       <div className="icons-container">
-      <img src="./assets/google.svg" alt="Google" className="icon" />
-            <img src="./assets/facebook.svg" alt="Facebook" className="icon" />
-            <img src="./assets/twitter.svg" alt="Twitter" className="icon" />
-            <img src="./assets/instagram.svg" alt="Instagram " className='icon'/>
+        <Link to={"https://www.google.co.in/"}><img src="./assets/google.svg" alt="Google" className="icon" /></Link>
+        <Link to={"https://www.facebook.com/"}><img src="./assets/facebook.svg" alt="Facebook" className="icon" /></Link>
+        <Link to={"https://www.twitter.com/"}><img src="./assets/twitter.svg" alt="Twitter" className="icon" /></Link>
+        <Link to={"https://www.instagram.com/"}><img src="./assets/instagram.svg" alt="Instagram " className='icon' /></Link>
       </div>
     </div>
   )

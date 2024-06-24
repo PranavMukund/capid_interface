@@ -47,49 +47,49 @@ function UserInteractionLayout() {
   }
   
 */
- /* function UserInteractionLayout(){
-    const [email,setEmail]=useState('');
-    const [phone,setPhone]=useState('');
+/* function UserInteractionLayout(){
+   const [email,setEmail]=useState('');
+   const [phone,setPhone]=useState('');
 
-    const handleEmailChange=(e)=>{
-      setEmail(e.target.value);
-    };
+   const handleEmailChange=(e)=>{
+     setEmail(e.target.value);
+   };
 
-    const handlePhoneChange=(e)=>{
-      setPhone(e.target.value);
-    };
+   const handlePhoneChange=(e)=>{
+     setPhone(e.target.value);
+   };
 
-    const handleSubmit=(e)=>{
-      e.preventDefault();
-      console.log("Email",email);
-      console.log("Phone",phone);
+   const handleSubmit=(e)=>{
+     e.preventDefault();
+     console.log("Email",email);
+     console.log("Phone",phone);
 
-      setEmail('');
-      setPhone('');
-      };
+     setEmail('');
+     setPhone('');
+     };
 
-      return 
-      (
-        
-        <form onSubmit={handleSubmit}>
-        <div>
-          <label>Email:</label>
-          <input type="email" value={email} onChange={handleEmailChange} />
-        </div>
-        <div>
-          <label>Phone:</label>
-          <input type="tel" value={phone} onChange={handlePhoneChange} />
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-  
-      );
+     return 
+     (
+       
+       <form onSubmit={handleSubmit}>
+       <div>
+         <label>Email:</label>
+         <input type="email" value={email} onChange={handleEmailChange} />
+       </div>
+       <div>
+         <label>Phone:</label>
+         <input type="tel" value={phone} onChange={handlePhoneChange} />
+       </div>
+       <button type="submit">Submit</button>
+     </form>
+ 
+     );
 
-    
-  }
-  */
+   
+ }
+ */
 
-  
+
 /*
 
 const UserInteractionLayout = () => {
@@ -144,12 +144,12 @@ const UserInteractionLayout = () => {
 
   return (
     <div className="user-interaction-layout">
-      <h1 className="heading">OTP Verification</h1>
+      <p style={{ fontFamily: "monospace", fontSize: "50px", background: "#94FFD8" }} className="heading">OTP Verification</p>
       <p className="instruction">
         Enter email and phone number to send one-time password.
       </p>
       <form className="form">
-        <label htmlFor="email">Email:</label>
+        <label style={{ width: "50px", background: "#ffe100" }} htmlFor="email">Email:</label>
         <input
           type="email"
           id="email"
@@ -158,7 +158,7 @@ const UserInteractionLayout = () => {
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" // Email validation pattern
           title="Please enter a valid email address" // Validation message
         />
-        <label htmlFor="phoneNumber">Phone Number:</label>
+        <label style={{ width: "120px", background: "#ffe100" }} htmlFor="phoneNumber">Phone Number:</label>
         <input
           type="tel"
           id="phoneNumber"

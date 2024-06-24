@@ -34,69 +34,70 @@
     white-space: pre-wrap;
   }
   */
-  #root{
-    display: flex; /* Makes the container a flexbox container */
+#root {
+  display: flex; /* Makes the container a flexbox container */
   justify-content: center; /* Horizontally centers child elements */
   align-items: center; /* Vertically centers child elements */
   min-height: 100vh;
-  }
-  body{
-    background-color: #032953;
-  }
-  .user-interaction-layout {
-    background-image: url('./assets/p2_img/forensic_bg2.jpeg'); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-    height: 640px; /* iPhone 14 & 15 Pro Max screen height */
-    width: 450px; /* iPhone 14 & 15 Pro Max screen width */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding : 20px;
-    
-  }
-  
-  .heading {
-    font-size: 75px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #ffe100;
-  }
-  
-  .instruction {
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 20px;
-    color-scheme: #00ff73;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  label {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
-  input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  
+}
+body {
+  background-color: #032953;
+}
+.user-interaction-layout {
+  background-image: url("./assets/p2_img/forensic_bg2.jpeg"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 600px; /* iPhone 14 & 15 Pro Max screen height */
+  width: 490px; /* iPhone 14 & 15 Pro Max screen width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  border-radius: 50px;
+  border-color: bisque;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffe100;
+}
+
+.instruction {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  color-scheme: #00ff73;
+  background-color: rgb(144, 165, 42);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}

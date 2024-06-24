@@ -33,9 +33,16 @@ function StartButtonParagraph() {
   };
 
   return (
-    <div className="membership-section">
+    <div >
 
-      <Button className="primary-button" onClick={handleButtonClick}>{messages["get_started"]}</Button>
+      <Button
+        className='btn-sm'
+        onClick={handleButtonClick}
+        style={{ width: "200px", margin: "-60px 10px 90px 140px", borderRadius: "15px", fontSize: "15px", fontWeight: "bold", backgroundColor: "#FDE49E" }}
+      >
+        {messages["get_started"]}
+
+      </Button>
       <p className="member-text-bold">{messages["im_already_member"]}</p>
     </div>
   );
